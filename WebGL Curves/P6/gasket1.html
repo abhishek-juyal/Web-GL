@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Assignment 6</title>
+
+     <script type="text/javascript" src="../Common/webgl-utils.js"></script>
+     <script type="text/javascript" src="../Common/initShaders.js"></script>
+     <script type="text/javascript" src="../Common/MV.js"></script>
+     <script type="text/javascript" src="gasket1.js"></script>
+
+</head>
+
+<body style="height: 1px;">
+     <b>Curve Algorithm:</b>
+     <br><br>
+     <div style="position: relative;top: -11px;width: 400px;height: 63px;border:1px solid #0023;"></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="BezierCurve" onclick="BezierCurve();"><b>BezierCurve</b> </button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button id="HermiteCurve" onclick="HermiteCurve();"><b>Hermite Curve</b></button> &nbsp;&nbsp;&nbsp;&nbsp;
+          <button id="BSplineCurve" onclick="BSplineCurve();"><b>BSplineCurve</b></button>
+     </div>
+     <div style="position: relative;top: -8px;width: 400px;height: 265px;border:1px solid #0023;">
+          <br><b>Co-ordinates:</b><br> <br>
+          X1 <input onChange="setValues();" type="text" id="x1" name="x1"> Y1 <input onChange="setValues();" type="text"
+               id="y1" name="y1"> <br><br>
+          X2 <input onChange="setValues();" type="text" id="x2" name="x2"> Y2 <input onChange="setValues();" type="text"
+               id="y2" name="y2"><br><br>
+          X3 <input onChange="setValues();" type="text" id="x3" name="x3"> Y3 <input onChange="setValues();" type="text"
+               id="y3" name="y3"> <br><br>
+          X4 <input onChange="setValues();" type="text" id="x4" name="x4"> Y4 <input onChange="setValues();" type="text"
+               id="y4" name="y4"><br><br>
+          N &nbsp;&nbsp;<input onChange="setValues();" type="text" id="n" name="n"><br><br>
+     </div>
+     <b>Canvas Primitive:</b><br><br>
+     <div style="position: relative;top: -11px;width: 400px;height: 63px;border:1px solid #0023;"></br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="BezierCurveP" onclick="BezierCurveP();"><b>BezierCurve Primitive</b> </button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- <button id="HermiteCurveP" onclick="HermiteCurveP();"><b>Hermite Curve</b></button> &nbsp;&nbsp;&nbsp;&nbsp;
+          <button id="BSplineCurveP" onclick="BSplineCurveP();"><b>BSplineCurve</b></button> -->
+     </div>
+     <div>
+          <label for="colorPicker"><b>Color Picker</b></label>
+          <input type="color" id="color" name="color"
+                 value="#000000" onchange="colorPickerM();">
+      </div><br>
+     <button style="position: relative; top: 0px;" id="clear" onclick="clearS();"><b>Clear</b></button>
+     <div
+          style="width:1024px;height:600px;border:1px solid #000; position: relative;top: -484px;right: -444px;background-color: snow;">
+          <canvas id="gl-canvas" width="1024" height="600">
+               Oops ... your browser doesn't support the HTML5 canvas element
+          </canvas>
+     </div>
+</body>
+
+</html>

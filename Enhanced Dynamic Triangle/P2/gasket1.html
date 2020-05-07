@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>2D Sierpinski Gasket</title>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="gasket1.js"></script>
+
+</head>
+
+<body>
+<canvas id="gl-canvas" width="512" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+<br>
+<div>
+     Number of Points: 500<input id="numPoint" type="range"
+     min="500" max="5000" step="300" value="300"/>
+     5000
+</div>
+
+<br>
+<button id= "display" onclick="displayT();">Display</button>&nbsp&nbsp
+<button id= "animate" onclick="animateT();">Animate</button>&nbsp&nbsp
+<button id= "clear" onclick="clearT();">Clear</button>
+
+<br>
+<br>
+<div>
+    <label for="colorPicker"><b>Color Picker</b></label>
+    <input type="color" id="color" name="color"
+           value="#e66465" onchange="colorPickerM();">
+</div>
+<br>  
+<b>Status:</b><div id="status">Animating the object.</div>
+</body>
+</html>

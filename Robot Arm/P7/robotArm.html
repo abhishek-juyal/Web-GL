@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="robotArm.js"></script>
+
+<div>
+    X body angle -180 <input id="Xslider1" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+
+<div>
+    Y body angle -180 <input id="Yslider1" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+<div>
+    Z body angle -180 <input id="Zslider1" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+----------------------------------------------------------------------------------<br />
+<div>
+    X lower arm angle -180 <input id="Xslider2" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+<div>
+    Y lower arm angle -180 <input id="Yslider2" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+<div>
+    Z lower arm angle -180 <input id="Zslider2" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+---------------------------------------------------------------------------------<br />
+<div>
+    X upper arm angle -180 <input id="Xslider3" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+<div>
+    Y upper arm angle -180 <input id="Yslider3" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+<div>
+    Z upper arm angle -180 <input id="Zslider3" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+----------------------------------------------------------------------------------<br />
+<b>Finger 1</b>
+<div>
+    X Finger arm angle -180 <input id="Xslider4" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+<div>
+    Y Finger arm angle -180 <input id="Yslider4" type="range" min="-180" max="180" step="10" value="2" />
+    180
+</div>
+<div>
+    Z Finger arm angle -180 <input id="Zslider4" type="range" min="-180" max="180" step="10" value="2" />
+    180
+</div>
+----------------------------------------------------------------------------------<br />
+<b>Finger 3</b>
+<div>
+    X Finger arm angle -180 <input id="Xslider5" type="range" min="-180" max="180" step="10" value="2" />
+    180
+</div>
+<div>
+    Y Finger arm angle -180 <input id="Yslider5" type="range" min="-180" max="180" step="10" value="2" />
+    180
+</div>
+<div>
+    Z Finger arm angle -180 <input id="Zslider5" type="range" min="-180" max="180" step="10" value="2" />
+    180
+</div>----------------------------------------------------------------------------------<br />
+<b>Finger 3</b>
+<div>
+    X Finger arm angle -180 <input id="Xslider6" type="range" min="-180" max="180" step="10" value="2" />
+    180
+</div>
+<div>
+    Y Finger arm angle -180 <input id="Yslider6" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div>
+<div>
+    Z Finger arm angle -180 <input id="Zslider6" type="range" min="-180" max="180" step="10" value="0" />
+    180
+</div><br />
+
+
+<body>
+    <canvas id="gl-canvas" width="512"" height=" 640" style="position: relative;left: 582px;top: -482px;">
+        Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+</body>
+
+</html>
